@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/counter" element={
+        <Route path="/Counter" element={
           <div className="App">
           <WordCount/>
         </div>
