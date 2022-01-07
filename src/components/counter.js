@@ -19,7 +19,7 @@ export const WordCount = ()=>{
             <header><h1>Basic world counter</h1></header>
             <textarea  onChange={work} placeholder="start typing.. or paste your text here"/>
             <footer> 
-                <span><b>{words-1}</b> words</span>
+                <span><b>{words}</b> words</span>
                 <span><b>{characters}</b> Characters</span>
             </footer>
             </Counter>
