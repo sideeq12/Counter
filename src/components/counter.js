@@ -1,7 +1,8 @@
 import React, {useState} from "react";
+import { Counter } from "./counter.styled.js/counter.styled";
 
 
-export const Counter = ()=>{
+export const WordCount = ()=>{
 
     const [words, setWords] = useState(0)
     const [characters, setCharacters] = useState(0)
@@ -14,13 +15,13 @@ export const Counter = ()=>{
         setCharacters(charCounter)
     }
     return (
-        <div className="">
-            <header>Basic world counter</header>
-            <textarea  onChange={work}/>
-            <div className="result">
-                <b>{words}</b>words
-                <b>{characters}</b>characters
-            </div>
-            </div>
+        <Counter>
+            <header><h1>Basic world counter</h1></header>
+            <textarea  onChange={work} placeholder="start typing.. or paste your text here"/>
+            <footer> 
+                <span><b>{words-1}</b> words</span>
+                <span><b>{characters}</b> Characters</span>
+            </footer>
+            </Counter>
     )
 }
