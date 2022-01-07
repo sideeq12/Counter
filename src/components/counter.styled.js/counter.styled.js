@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 
 export const Counter = styled.div`
+display : flex;
+flex-direction : column;
 
 header {
     background : #5CA4A9;
@@ -19,9 +21,10 @@ textarea {
     border-radius : 10px;
     padding : 10px;
     border : 2px solid rgba(0, 0, 0, 0.503);
+    margin : 0 auto;
 }
  footer{
-    height : 15vh;
+    height : 10vh;
     background : #404E4D;
     color : rgba(255, 255, 255, 0.753);
     display : flex;
