@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/Counter" element={
-         
+         <WordCount />
         } />
       </Routes>
     </Router>
